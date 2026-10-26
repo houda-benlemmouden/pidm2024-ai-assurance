@@ -30,8 +30,9 @@ A function's inclusion in this inventory does not mean it is confirmed to be ope
 - Events from municipal systems.
 
 **Documented outputs or consequences:**
-- Automatic incident detection within the Public Safety module.
-- Incident information available to the wider incident-management and alerting functions.
+
+- Automatic incident detection is specified as a capability of the Public Safety module.
+- The wider module specification describes incident management, GIS visualisation, automated multi-area protocols and multichannel alerts. The precise relationship between individual detection outputs and these downstream functions requires verification.
 
 **Outstanding questions:**
 - Which incident types are within scope?
@@ -46,7 +47,7 @@ A function's inclusion in this inventory does not mean it is confirmed to be ope
 
 **Source references:** §7.5.3, pp. 83–84.
 
-**Stated purpose:** Correlate events across multiple sources to support incident awareness and management.
+**Stated purpose:** Use AI to correlate events captured from multiple sources, group related incidents, and avoid duplicate incidents.
 
 **Documented inputs:**
 - Sensors and cameras.
@@ -82,7 +83,9 @@ A function's inclusion in this inventory does not mean it is confirmed to be ope
 **Outstanding clarification:** The exact predictive targets, model architecture and allocation of inputs to individual models are not specified in the reviewed passage.
 
 **Documented outputs or consequences:**
-- Predictive information intended to support public-safety planning or operations.
+
+- Predictive analytics intended to anticipate risks and support proactive action, as described in §7.5.2.
+- The specific prediction targets, output formats and operational uses are not defined in the reviewed passage.
 
 **Outstanding questions:**
 - What specific outcomes are predicted: incident likelihood, location, severity, demand or something else?
@@ -101,10 +104,11 @@ A function's inclusion in this inventory does not mean it is confirmed to be ope
 **Stated purpose:** Provide video analytics through specified PTZ and fixed cameras.
 
 **Documented capabilities include:**
-- Object classification and tracking in the PTZ camera requirements.
-- People and vehicle detection in the fixed-camera requirements.
-- Intrusion and abandoned-object detection in the fixed-camera requirements.
-- Line-crossing, loitering and tamper detection in the PTZ camera requirements.
+
+- **PTZ cameras:** automatic tracking, line-crossing detection, loitering detection, object classification and tamper detection.
+- **Fixed cameras:** people and vehicle detection, intrusion detection, abandoned-object detection, occupancy counting, zone occupancy and tamper detection.
+
+These are specified equipment capabilities. The specification does not establish that every feature will be enabled or used operationally.
 
 These are specified equipment capabilities; the document does not establish that every feature will be enabled or used operationally.
 
@@ -130,10 +134,14 @@ These are specified equipment capabilities; the document does not establish that
 **Stated purpose:** Provide aerial video and telemetry with AI-based functions, integrated with GIS and the video-management system.
 
 **Documented capabilities include:**
-- Object classification and counting.
-- Tracking.
-- Low-visibility imaging.
-- Fire-area assessment.
+
+- **Image enhancement:** improve contrast and sharpness in conditions of extreme fog, and provide full-colour night vision in near-total darkness.
+- **Object analytics:** automatically classify and count objects, people and/or animals, with intelligent real-time tracking.
+- **Fire-area assessment:** detect and delineate areas affected by fires, calculate wind direction, predict potentially affected areas, and identify safe operational access zones.
+
+The specification requires these capabilities to integrate with the Public Safety module’s video-management system and GIS, with real-time use in emergency environments and visualisation on the CME’s large LED display.
+
+These are specified requirements, not evidence that the capabilities have been delivered, configured, validated or used operationally.
 
 **Documented inputs:**
 - Aerial video.
