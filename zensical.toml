@@ -1,0 +1,69 @@
+[project]
+site_name = "AI Governance & Assurance"
+site_description = "Independent documentary assessment of PIDM2024 Module #32 Public Safety"
+site_url = "https://houda-benlemmouden.github.io/pidm2024-ai-assurance/"
+docs_dir = "docs"
+extra_css = ["stylesheets/extra.css"]
+extra_javascript = ["javascripts/extra.js"]
+
+nav = [
+  { "Overview" = "index.md" },
+  { "Source Baseline" = [
+    "source-baseline/index.md",
+    "source-baseline/source-requirements-register.md",
+    "source-baseline/evidence-gaps.md",
+  ] },
+  { "System Understanding" = [
+    "system-understanding/ai-function-inventory.md",
+    "system-understanding/operational-context.md",
+    "system-understanding/system-context.md",
+  ] },
+  { "Risk Assessment" = [
+    "risk-assessment/risk-assessment-overview.md",
+    "risk-assessment/risk-rating-method.md",
+  ] },
+  { "Assurance Testing" = [
+    "assurance-testing/assurance-strategy.md",
+  ] },
+  { "Registers" = "registers.md" },
+  { "Methodology" = [
+    "methodology/evidence-method.md",
+    "methodology/work-plan.md",
+  ] },
+  { "Final Assessment" = "reporting/final-assessment-report.md" },
+]
+
+
+[project.theme.palette]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+toc.permalink = true
+pymdownx.arithmatex.generic = true
+pymdownx.betterem = {}
+pymdownx.caret = {}
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.magiclink = {}
+pymdownx.mark = {}
+pymdownx.smartsymbols = {}
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true
+pymdownx.tabbed.combine_header_slug = true
+pymdownx.tasklist.custom_checkbox = true
+pymdownx.tilde = {}

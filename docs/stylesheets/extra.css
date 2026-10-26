@@ -1,0 +1,112 @@
+:root > * {
+  --md-primary-fg-color: #26374A;
+  --md-primary-fg-color--light: #394D63;
+  --md-primary-fg-color--dark: #1B2735;
+  --md-primary-bg-color: #FFFFFF;
+  --md-primary-bg-color--light: #FFFFFF;
+  --md-accent-fg-color: #0F766E;
+  --md-accent-fg-color--transparent: #0F766E1A;
+  --md-accent-bg-color: #FFFFFF;
+  --md-accent-bg-color--light: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #FAFAF8;
+  --md-default-fg-color: #263238;
+  --md-default-fg-color--light: #52616B;
+  --md-typeset-a-color: #0F766E;
+  --md-code-bg-color: #F0F2F3;
+  --md-footer-bg-color: #202B3C;
+  --md-footer-bg-color--dark: #182230;
+}
+
+/* Give desktop content more room */
+@media screen and (min-width: 76.25em) {
+  .md-main__inner.md-grid {
+    max-width: 1600px;
+  }
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: -0.02em;
+}
+
+.md-typeset h1 {
+  font-weight: 650;
+}
+
+/* Scroll wide tables inside their own container */
+.md-typeset .table-scroll {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  margin: 1em 0;
+  border: 1px solid #DCE2E5;
+  border-radius: 4px;
+}
+
+.md-typeset .table-scroll:focus-visible {
+  outline: 2px solid #0F766E;
+  outline-offset: 2px;
+}
+
+/* Preserve enough width for seven-column registers */
+.md-typeset .table-scroll > table {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  table-layout: fixed;
+  margin: 0;
+  font-size: 0.65rem;
+  line-height: 1.4;
+}
+
+.md-typeset .table-scroll th,
+.md-typeset .table-scroll td {
+  padding: 0.35em 0.4em;
+  vertical-align: top;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.md-typeset .table-scroll th:nth-child(1),
+.md-typeset .table-scroll td:nth-child(1) { width: 8%; }
+
+.md-typeset .table-scroll th:nth-child(2),
+.md-typeset .table-scroll td:nth-child(2) { width: 13%; }
+
+.md-typeset .table-scroll th:nth-child(3),
+.md-typeset .table-scroll td:nth-child(3) { width: 25%; }
+
+.md-typeset .table-scroll th:nth-child(4),
+.md-typeset .table-scroll td:nth-child(4) { width: 12%; }
+
+.md-typeset .table-scroll th:nth-child(5),
+.md-typeset .table-scroll td:nth-child(5) { width: 13%; }
+
+.md-typeset .table-scroll th:nth-child(6),
+.md-typeset .table-scroll td:nth-child(6) { width: 20%; }
+
+.md-typeset .table-scroll th:nth-child(7),
+.md-typeset .table-scroll td:nth-child(7) { width: 9%; }
+
+.md-typeset table:not([class]) th {
+  background: #EEF1F3;
+  color: #26374A;
+}
+
+.md-typeset a {
+  text-underline-offset: 0.15em;
+}
+
+.md-typeset hr {
+  border-bottom-color: #DCE2E5;
+}

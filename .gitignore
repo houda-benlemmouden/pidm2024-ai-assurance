@@ -1,0 +1,12 @@
+# Python virtual environment
+.venv/
+
+# Generated documentation website
+site/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Local test and tool caches
+.pytest_cache/
