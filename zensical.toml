@@ -26,6 +26,7 @@ nav = [
     "assurance-testing/assurance-strategy.md",
   ] },
   { "Registers" = "registers.md" },
+  { "Traceability Matrix" = "generated/index.md" },
   { "Methodology" = [
     "methodology/evidence-method.md",
     "methodology/work-plan.md",
