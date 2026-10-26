@@ -17,7 +17,7 @@ EVIDENCE_GAPS_DOC = (
     ROOT / "docs" / "source-baseline" / "evidence-gaps.md"
 )
 
-PAGE = ROOT / "docs" / "generated" / "index.md"
+PAGE = ROOT / "docs" / "analysis" / "traceability-matrix.md"
 START_MARKER = "<!-- MATRIX-TABLE-START -->"
 END_MARKER = "<!-- MATRIX-TABLE-END -->"
 

@@ -26,7 +26,15 @@ nav = [
     "assurance-testing/assurance-strategy.md",
   ] },
   { "Registers" = "registers.md" },
-  { "Traceability Matrix" = "generated/index.md" },
+    { "AI Risk Analysis & Assurance" = [
+    "analysis/index.md",
+    "analysis/risk-impact-profile.md",
+    "analysis/traceability-matrix.md",
+    "analysis/evidence-gap-coverage.md",
+    "analysis/risk-matrix.md",
+    "analysis/risk-controls-assurance.md",
+    "analysis/ai-lifecycle-risk-map.md",
+  ] },
   { "Methodology" = [
     "methodology/evidence-method.md",
     "methodology/work-plan.md",
