@@ -102,10 +102,11 @@ The assessment will not claim to verify the operation or effectiveness of a depl
 
 **Activities**
 - Identify risks associated with the documented capabilities and information flows.
-- Assess plausible impacts, affected stakeholders, causes and existing evidence.
-- Distinguish inherent risks from documented controls and unverified control assumptions.
-- Prioritise risks using a defined, consistently applied rating method.
-- Identify the evidence required to validate each material risk.
+- Assess plausible impacts, affected stakeholders, causes and available evidence.
+- Define and apply separate impact and likelihood ratings, with a documented rationale for each.
+- Distinguish inherent risk, documented control requirements, control implementation and effectiveness status, and residual risk.
+- Prioritise risks using a defined, consistently applied rating method that accounts for uncertainty.
+- Link each material risk to supporting source requirements and relevant evidence gaps, and identify the evidence needed to validate the risk and any assumed controls.
 
 **Deliverables**
 - `docs/risk-assessment/` analysis.
@@ -113,10 +114,12 @@ The assessment will not claim to verify the operation or effectiveness of a depl
 - Risk-rating methodology and rationale.
 
 **Completion criteria**
-- Each risk has a clear scenario, rationale and evidence reference.
-- Ratings follow documented criteria.
-- Proposed controls are not described as existing controls without evidence.
-- Priorities reflect both potential impact and uncertainty where appropriate.
+- Each risk has a clear scenario, rationale, supporting evidence references and identified affected stakeholders.
+- Impact and likelihood are rated separately using documented criteria, with uncertainty explicitly recorded where a reliable rating is not possible.
+- Inherent risk and residual risk are distinguished. Residual risk is assessed only where the available evidence supports a defensible conclusion.
+- Controls are accurately classified according to whether they are specified, proposed, implemented or verified as effective, without unsupported claims.
+- Risk priorities follow the documented rating method and account for material uncertainty.
+- Material risks are traceable to relevant source requirements and evidence gaps.
 
 ### Phase 5: Assurance strategy and proposed tests
 

@@ -55,6 +55,8 @@ Recommendations should identify the issue addressed, the rationale, the evidence
 
 The assessment should distinguish documented non-conformity from a potential risk, an evidence gap or a recommendation for further verification.
 
+Risk assessments must distinguish inherent risk from residual risk. Documented controls may be considered in the assessment only to the extent supported by available evidence. A requirement specified in procurement documentation does not establish that the corresponding control has been implemented or is effective. Where likelihood, control effectiveness or residual risk cannot be assessed reliably, the uncertainty and its rationale must be recorded.
+
 ## 7. Review and quality assurance
 
 Before publication, each material finding should be checked for:
@@ -64,5 +66,7 @@ Before publication, each material finding should be checked for:
 3. Clear separation of fact and inference.
 4. Explicit limitations and unresolved questions.
 5. Proportionate conclusions and actionable recommendations.
+6. Consistent risk ratings, with separate rationales for impact, likelihood, control status and residual risk where applicable.
+7. Consistent identifiers and valid traceability across the source, requirements, evidence-gap, risk and assurance-test registers.
 
 Any material correction should be reflected in the relevant register and version history.
