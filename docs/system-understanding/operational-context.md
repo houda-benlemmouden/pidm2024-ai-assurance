@@ -89,17 +89,17 @@ The assessment therefore distinguishes documented capabilities and relationships
 
 **Documented capability:** The specification describes predictive analysis involving historical incident records, meteorological information, urban and tourism GIS layers, and real-time video-surveillance information.
 
-**Operational significance:** Predictive outputs are intended to support public-safety planning or operations.
+**Operational significance:** The specification describes predictive analytics as a means of anticipating risks and supporting proactive action in public-safety planning or operations. The specific prediction targets and how predictions influence operational decisions remain undefined in the reviewed passages.
 
 **Requires verification:** The specific outcomes predicted, the inputs used by individual models, the interpretation of predictions, and whether predictions influence operational priorities or actions.
 
 ### 4.5 Drone-Based Analytics
 
-**Documented capability:** The drone requirements describe aerial video, telemetry, and AI-based capabilities such as object classification and counting, tracking, low-visibility imaging, and fire-area assessment.
+**Documented capability:** The drone requirements specify AI-based image enhancement for extreme fog, full-colour night vision in near-total darkness, automatic classification and counting of objects, people and/or animals, intelligent real-time tracking, and fire-area assessment. Fire-area functions include calculating wind direction, predicting potentially affected areas, and identifying safe operational access zones.
 
-**Operational significance:** These capabilities may contribute aerial information to situational awareness and operational assessment.
+**Operational significance:** These capabilities are intended to provide aerial information for situational awareness and operational assessment during emergencies.
 
-**Requires verification:** The operational uses of individual analytics, their integration with GIS and video management, and the procedures governing the use and review of their outputs.
+**Requires verification:** The operational use of individual analytics, their validation and performance, their integration with GIS and video management, and the procedures governing deployment and review of their outputs.
 
 ## 5. Downstream Operational Consequences
 
@@ -129,7 +129,7 @@ The specification describes relationships between Public Safety and other PIDM20
 - CRM/fidelity module: incorporation of safety-related interactions into a unified profile for personalisation and campaigns.
 - Route planner: use of information such as safe zones, risk zones, police presence, active alerts, and temporary restrictions in suggested itineraries.
 
-These relationships may raise questions about purpose limitation, data minimisation, access control, information accuracy, retention, and the separation of public-safety purposes from personalisation or marketing purposes.
+These relationships raise assurance questions about purpose limitation, data minimisation, access control, information accuracy, retention, and the separation of public-safety purposes from personalisation or marketing purposes. Their inclusion identifies areas for assessment; it does not establish that a legal violation or control failure exists.
 
 The specification's description of a relationship does not establish which data fields are transferred, whether transfers occur in live operation, or what safeguards are implemented.
 
