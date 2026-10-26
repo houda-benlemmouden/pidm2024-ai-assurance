@@ -34,3 +34,22 @@ The generator also checks whether source requirement and evidence-gap identifier
 "References present" means the expected identifier references are recorded and pass the implemented checks. It does not establish that the underlying evidence is sufficient, that a proposed test has been executed, or that a system control is effective.
 
 The matrix is a traceability aid, not a substitute for reading the source requirements, risk assessment, assurance strategy, and final report.
+
+## Evidence-gap coverage heatmap
+
+This interactive matrix shows which evidence gaps are linked to each identified risk in the risk register. Teal cells indicate a recorded relationship; grey cells indicate that no relationship is recorded.
+
+The chart is generated from the current risk register. It does not represent risk severity or evidence-gap closure.
+
+<iframe
+  src="evidence-gap-coverage.html"
+  title="Interactive evidence-gap coverage heatmap"
+  width="100%"
+  height="760"
+  style="border: 1px solid #DCE2E5; border-radius: 4px;"
+  loading="lazy">
+</iframe>
+
+[Open the heatmap in a separate page](evidence-gap-coverage.html)
+
+[Download the evidence-gap coverage matrix (CSV)](evidence-gap-coverage.csv)

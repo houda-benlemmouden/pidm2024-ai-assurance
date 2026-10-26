@@ -1,0 +1,12 @@
+﻿risk_id,risk_title,EG-001,EG-002,EG-003,EG-004,EG-005,EG-006,EG-007,EG-008
+RSK-001,Incident detection errors may delay or misdirect response,1,1,1,0,0,0,1,0
+RSK-002,Unverified authorisation and override arrangements for automated protocols,1,0,1,1,1,0,0,0
+RSK-003,Unreliable predictive analytics may misdirect public-safety planning or response,0,1,1,0,1,0,1,0
+RSK-004,"Incorrect event correlation may combine, duplicate or misclassify incident information",0,1,1,1,0,0,1,0
+RSK-005,Public-safety information reused for CRM personalisation without adequately evidenced safeguards,0,0,0,0,0,1,0,0
+RSK-006,Video and drone data may be captured or retained without sufficiently evidenced access and lifecycle controls,0,0,0,0,0,1,1,0
+RSK-007,Security or integration weaknesses may compromise system integrity or availability,0,0,0,1,1,0,1,0
+RSK-008,"Backup, recording or recovery failures may interrupt public-safety operations or remove needed evidence",0,0,0,0,0,0,1,0
+RSK-009,AI performance degradation may go undetected during operation,0,1,1,0,1,0,1,0
+RSK-010,AI-related incidents and material changes may not be consistently investigated or controlled,0,0,0,1,1,0,1,0
+RSK-011,External data-source quality or provenance may distort analysis if sources are used by Public Safety,0,1,1,0,0,0,0,1
