@@ -26,7 +26,7 @@ nav = [
     "assurance-testing/assurance-strategy.md",
   ] },
   { "Registers" = "registers.md" },
-    { "AI Risk Analysis & Assurance" = [
+  { "AI Risk Analysis & Assurance" = [
     "analysis/index.md",
     "analysis/risk-impact-profile.md",
     "analysis/traceability-matrix.md",
