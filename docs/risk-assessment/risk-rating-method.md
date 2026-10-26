@@ -134,6 +134,8 @@ The numeric bands support consistency but do not replace reasoned judgement. Any
 
 Ratings should be revisited if new evidence changes the risk scenario, impact assessment, likelihood rationale or control status.
 
+Assessment priority is separate from the numeric risk rating and describes the urgency of further assessment or evidence collection. Use **High** when potentially serious consequences or material uncertainty justify prompt investigation; **Moderate** when further assessment is needed but the available evidence does not indicate the same urgency; and **Low** when follow-up can reasonably be scheduled for routine review. Record the rationale for each priority. These labels do not represent verified operational risk or prove that harm is likely.
+
 ## 9. Limitations
 
 This methodology supports a documentary assessment. It does not establish the actual likelihood of events, the operational effectiveness of controls, the performance of AI models, or the compliance status of a deployed system without supporting evidence.

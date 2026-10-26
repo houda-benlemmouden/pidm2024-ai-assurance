@@ -28,7 +28,7 @@ EXPECTED_HEADERS = [
     "evidence_confidence", "documented_controls", "control_status",
     "control_evidence_and_limitations", "residual_impact_score",
     "residual_likelihood_score", "residual_score", "residual_rating",
-    "residual_assessment_status", "additional_evidence_required", "proposed_response",
+    "residual_assessment_status", "additional_evidence_required", "proposed_response", "assessment_priority", "priority_rationale",
 ]
 
 RATING_BANDS = (
@@ -111,7 +111,7 @@ def validate() -> int:
 
     try:
         with RISK_CSV.open("r", newline="", encoding="utf-8-sig") as file:
-            reader = csv.DictReader(file)
+            reader = csv.DictReader(file, restkey="__extra_fields__")
             headers = reader.fieldnames or []
             if not headers:
                 fail("Risk register is empty or has no header row.", errors)
@@ -128,9 +128,28 @@ def validate() -> int:
 
             rows = []
             for row_num, row in enumerate(reader, start=2):
-                # Ignore completely blank rows, but not partially completed records.
-                if not any((v or "").strip() for v in row.values()):
+                extra_fields = row.pop("__extra_fields__", None)
+                missing_fields = [h for h in headers if row.get(h) is None]
+                values = [row.get(h) for h in headers]
+
+                # Ignore completely blank rows.
+                if not any((v or "").strip() for v in values) and not extra_fields:
                     continue
+
+                if extra_fields is not None:
+                    fail(
+                        f"Row {row_num}: row has {len(headers) + len(extra_fields)} "
+                        f"fields but the header has {len(headers)}.",
+                        errors,
+                    )
+
+                if missing_fields:
+                    fail(
+                        f"Row {row_num}: row has too few fields; missing trailing "
+                        f"field(s): {', '.join(missing_fields)}.",
+                        errors,
+                    )
+
                 rows.append((row_num, row))
     except (OSError, csv.Error, UnicodeError) as exc:
         print(f"ERROR: Could not read risk register: {exc}")
