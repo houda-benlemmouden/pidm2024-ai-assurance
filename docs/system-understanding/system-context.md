@@ -53,6 +53,8 @@ Relevant source requirements include:
 - **SRC-012:** Data sources and outputs.
 - **SRC-014–SRC-017:** Camera, recording infrastructure, control-room infrastructure, and drone requirements.
 
+**Broader platform architecture:** Section 6.3, “ARQUITECTURA DE LA PIDM24,” printed page 41, provides a platform-level architecture view covering support, interoperability, knowledge processing, acquisition/interconnection, and external systems. It provides context for understanding Module #32 within PIDM24, but does not by itself establish which platform components are connected to Public Safety or verify the implementation of specific data flows.
+
 Relevant evidence gaps include **EG-001–EG-008**, covering human oversight, model validation, monitoring, incident management, accountability and change control, data governance, implementation verification, and external data-source integration.
 
 These references identify relevant records for further assessment. They do not establish that requirements have been fulfilled or that controls are effective.
